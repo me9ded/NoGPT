@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: azure;
+}
+#login-page {
+    font-size: 18pt;
+    color: black;
+    text-align: center;
+    padding: 100px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    margin-bottom: 20px; 
+    margin-top: 100px;
+    box-shadow: 10px 10px lightblue;
+    width: 200px;
+    height: 300px;
+    background-color:beige
+}
+input{
+    background-color:lightcyan;
+    width: 200px;
+}
+button{
+    background-color: lightcoral;
+    
+}
