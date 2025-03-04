@@ -6,26 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="554701579172-rjj3df4t0bt4i6vj1q73m74akq3j3bpj.apps.googleusercontent.com.apps.googleusercontent.com">
 
 
 </head>
 <body>
     <div class="container">
         <div id="login-page">
+            <div id="title">
+                <p>Welcome Back</p>
+                <p>Please enter your details to login</p>
+            </div>
             <form>
-                <label for="First Name">First Name:</label>
-                <input type="text" id="first_name" name="first_name" value="John for example">
-                <br>
-                <label for="Last Name">Last Name:</label><br>
-                <input type="text" id="last_name" name="last_name" value="Doe for example">
-                <br>
-                <label for="E-mail">E-mail:</label>
+                <label for="E-mail" id="label1">E-mail:</label>
                 <input type="text" id="email" name="email" value="Enter a valid email address">
+                <br>
+                <a href="passwordforgotten.html">forgot your password?</a>
+                <br>
+                <label for="password" id="label2">Password:</label>
+                <input type="password" id="password" name="password">
             </form>
             <br>
             <button>Login in</button>
             <button onclick="sendemail.js">Sign up</button>
+            <br>
+            <br>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
         </div>
+
 
     </div>    
 </body>
